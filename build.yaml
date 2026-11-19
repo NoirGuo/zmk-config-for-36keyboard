@@ -1,0 +1,34 @@
+# This file generates the GitHub Actions matrix.
+# For simple board + shield combinations, add them to the top level board and
+# shield arrays, for more control, add individual board + shield combinations
+# to the `include` property. You can also use the `cmake-args` property to
+# pass flags to the build command, `snippet` to add a Zephyr snippet, and
+# `artifact-name` to assign a name to distinguish build outputs from each other:
+#
+# board: [ "nice_nano//zmk" ]
+# shield: [ "corne_left", "corne_right" ]
+# include:
+#   - board: bdn9
+#   - board: nice_nano//zmk
+#     shield: reviung41
+#   - board: nice_nano//zmk
+#     shield: corne_left
+#     snippet: studio-rpc-usb-uart
+#     cmake-args: -DCONFIG_ZMK_STUDIO=y
+#     artifact-name: corne_left_with_studio
+#
+# NOTE: Under Zephyr 4.1, the old `nice_nano_v2` board id became a board
+# revision of `nice_nano`. The `zmk` variant is now required for all in-tree
+# ZMK boards. `nice_nano_v2` is thus `nice_nano//zmk` (defaults to rev 2.0.0).
+---
+include:
+  - board: nice_nano//zmk
+    shield: tbk_mini_left
+    snippet: studio-rpc-usb-uart
+    artifact-name: tbk_mini_left
+  - board: nice_nano//zmk
+    shield: tbk_mini_right
+    artifact-name: tbk_mini_right
+  - board: nice_nano//zmk
+    shield: settings_reset
+    artifact-name: tbk_mini_settings_reset
