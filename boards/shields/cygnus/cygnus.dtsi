@@ -1,10 +1,10 @@
-#include "tbk_mini-layouts.dtsi"
+#include "cygnus-layouts.dtsi"
 #include <dt-bindings/zmk/matrix_transform.h>
 
 / {
     chosen {
         zmk,kscan = &kscan0;
-        zmk,physical-layout = &physical_layout_tbk_mini;
+        zmk,physical-layout = &physical_layout_cygnus;
     };
 
     default_transform: matrix_transform0 {
@@ -26,6 +26,6 @@
     };
 };
 
-&physical_layout_tbk_mini {
+&physical_layout_cygnus {
     transform = <&default_transform>;
 };

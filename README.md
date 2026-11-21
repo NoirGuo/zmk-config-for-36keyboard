@@ -1,4 +1,4 @@
-## 键位图-TBK-minii
+## 键位图-Cygnus
 
-<img src="keymap-drawer/tbk_mini.svg" >
+<img src="keymap-drawer/cygnus.svg" >
 

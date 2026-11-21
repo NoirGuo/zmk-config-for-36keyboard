@@ -1,0 +1,12 @@
+file_format: "1"
+id: cygnus
+name: Cygnus
+type: shield
+url: https://github.com/cygnus
+requires: [nice_nano]
+features:
+  - keys
+  - underglow
+siblings:
+  - cygnus_left
+  - cygnus_right

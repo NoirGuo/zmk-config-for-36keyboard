@@ -1,4 +1,4 @@
-layout: {zmk_keyboard: tbk_mini}
+layout: {zmk_keyboard: cygnus}
 layers:
   Base:
   - $$mdi:keyboard-esc$$

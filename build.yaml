@@ -23,12 +23,12 @@
 ---
 include:
   - board: nice_nano//zmk
-    shield: tbk_mini_left
+    shield: cygnus_left
     snippet: studio-rpc-usb-uart
-    artifact-name: tbk_mini_left
+    artifact-name: cygnus_left
   - board: nice_nano//zmk
-    shield: tbk_mini_right
-    artifact-name: tbk_mini_right
+    shield: cygnus_right
+    artifact-name: cygnus_right
   - board: nice_nano//zmk
     shield: settings_reset
-    artifact-name: tbk_mini_settings_reset
+    artifact-name: cygnus_settings_reset
