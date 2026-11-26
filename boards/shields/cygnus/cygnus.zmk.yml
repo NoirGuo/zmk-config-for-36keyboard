@@ -6,7 +6,6 @@ url: https://github.com/cygnus
 requires: [nice_nano]
 features:
   - keys
-  - underglow
 siblings:
   - cygnus_left
   - cygnus_right
